@@ -1,0 +1,37 @@
+USE [PublicationDB]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Publications](
+	[idPublication] [int] IDENTITY(1,1) NOT NULL,
+	[Titulo] [varchar](400) NULL,
+	[Subtitulo] [varchar](400) NULL,
+	[Autores] [varchar](400) NULL,
+	[Editorial] [varchar](200) NULL,
+	[Fecha_Publicacion] [datetime] NULL,
+	[ISBN_13] [varchar](200) NULL,
+	[ISBN_10] [varchar](200) NULL,
+	[Paginas] [int] NULL,
+	[Categorias] [varchar](200) NULL,
+	[Tipo] [varchar](200) NULL,
+	[Lenguaje] [varchar](200) NULL,
+	[Imagen] [varchar](200) NULL,
+	[Rating] [varchar](200) NULL,
+	[Opiniones] [varchar](200) NULL,
+	[Precio_Lista] [decimal](18, 2) NULL,
+	[Moneda_Lista] [varchar](200) NULL,
+	[Precio_Venta] [decimal](18, 2) NULL,
+	[Moneda_Venta] [varchar](200) NULL,
+ CONSTRAINT [PK_Publications] PRIMARY KEY CLUSTERED 
+(
+	[idPublication] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

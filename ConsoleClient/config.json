@@ -1,0 +1,9 @@
+{
+  "FileToImport": "libros.csv",
+  "DbEngine": "sqlserver",
+
+  "ConnectionStrings": {
+    "sqlserver": "Server=.;Database=PublicationDB;Integrated Security=true;",
+    "mysql": "Server=localhost;Database=PublicationDB;Uid=root;Pwd=;"
+  }
+}
